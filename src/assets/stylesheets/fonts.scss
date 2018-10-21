@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./assets/fontawesome/fonts/fontawesome-webfont.eot');
+    src: url('./assets/fontawesome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fontawesome/fonts/fontawesome-webfont.woff') format('woff'),
+    url('./assets/fontawesome/fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('./assets/fontawesome/fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('./assets/fontawesome/fonts/fontawesome-webfont.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('./assets/fonts/ProximaNova-Regular.eot');
+    src: url('./assets/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/ProximaNova-Regular.woff') format('woff'),
+    url('./assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+    url('./assets/fonts/ProximaNova-Regular.svg') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNova-light';
+    src: url('./assets/fonts/ProximaNova-Light.eot');
+    src: url('./assets/fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/ProximaNova-Light.woff') format('woff'),
+    url('./assets/fonts/ProximaNova-Light.ttf') format('truetype'),
+    url('./assets/fonts/ProximaNova-Light.svg') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNova';
+    font-weight: bold;
+    src: url('./assets/fonts/ProximaNova-Bold.eot');
+    src: url('./assets/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/ProximaNova-Bold.woff') format('woff'),
+    url('./assets/fonts/ProximaNova-Bold.ttf') format('truetype'),
+    url('./assets/fonts/ProximaNova-Bold.svg') format('svg');
+}

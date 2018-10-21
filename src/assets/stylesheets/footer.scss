@@ -1,0 +1,27 @@
+%footer-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    width: 55px;
+    color: #fff;
+    &:hover{
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width: 824px){
+
+    %footer-btn {
+        height: 35px;
+        width: 45px;
+    }   
+}
+.help-btn {
+    @extend %footer-btn;
+    background-color: #1f2637;
+}
+.setings-btn {
+    @extend %footer-btn;
+    background-color: #15a4fa;
+}

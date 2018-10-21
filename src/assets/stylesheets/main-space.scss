@@ -1,0 +1,16 @@
+.main-space {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 200px;
+    z-index: 1;
+    overflow: auto;
+}
+
+@media screen and (max-width: 824px){
+    .main-space {
+        padding-left: 0;
+    }
+}

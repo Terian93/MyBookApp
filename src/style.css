@@ -83,6 +83,10 @@ main {
   position: relative;
   height: calc(100vh - 90px);
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 footer {
@@ -106,7 +110,7 @@ footer {
 
 @media screen and (max-width: 824px) {
   header, footer {
-    height: 25px;
+    height: 35px;
   }
   header {
     -webkit-box-align: stretch;
@@ -114,7 +118,7 @@ footer {
             align-items: stretch;
   }
   main {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
   }
 }
 
@@ -328,10 +332,6 @@ footer {
   margin-bottom: 4px;
   border-bottom: 1px solid #141824;
   background-color: #1f2637;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .side-bar__add-book-btn {
@@ -370,10 +370,6 @@ footer {
   border-top: 1px solid rgba(120, 130, 157, 0.1);
   border-bottom: 1px solid #141824;
   margin-bottom: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .side-bar__main-nav li {
@@ -582,5 +578,38 @@ footer {
   .main-space {
     padding-left: 0;
   }
+}
+
+.help-btn, .setings-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 55px;
+  color: #fff;
+}
+
+.help-btn:hover, .setings-btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 824px) {
+  .help-btn, .setings-btn {
+    height: 35px;
+    width: 45px;
+  }
+}
+
+.help-btn {
+  background-color: #1f2637;
+}
+
+.setings-btn {
+  background-color: #15a4fa;
 }
 /*# sourceMappingURL=style.css.map */

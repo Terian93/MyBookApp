@@ -1,0 +1,127 @@
+.circles {
+    display: flex;
+    height: 10px;
+    width: 38px;
+    margin-left: 20px; 
+
+    %circle {
+        height: 10px;
+        width: 10px;
+        margin-right: 4px;
+        border-radius: 50%;
+    }
+    %circle:last-of-type {
+        margin-right: 0;
+    }
+
+    &__red {
+        @extend %circle;
+        background-color: #e76847;
+    }
+
+    &__yellow {
+        @extend %circle; 
+        background-color: #fabf00;
+    }
+
+    &__green {
+        @extend %circle;
+        background-color: #52bea6;
+    }
+}
+
+.app-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: normal;
+
+    &:before {
+        font-family: 'FontAwesome';
+        content: '\f02d';
+        display: block;
+        height: 12px;
+        width: 12px;
+        margin-right: 7px;
+    }
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    font-size: 13px;
+
+    &__help-btns{
+        width: 169px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 18px;
+    }
+
+    &__help-center-btn:hover, &__our-support-btn:hover { 
+        cursor: pointer;
+        color: lighten(#78829d, 50%);
+    }
+
+    &__divider {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: #19202e;
+    }
+}
+
+.profile-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    width: 158px;
+    background-color: #15a4fa;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &__avatar {
+        height: 32px;
+        width: 32px;
+        border: solid 2px #eef1f7;
+        border-radius: 50%;
+        object-fit: contain;
+        margin-left: 12px;
+    }
+
+    &__fullname:after {
+        font-family: 'FontAwesome';
+        content: '\f13a';
+        height: 12px;
+        width: 12px; 
+        margin-left: 16px
+    }
+}
+
+@media screen and (max-width: 824px) {
+
+    .circles {
+        height: 100%;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .profile-btn {
+        height: 100% !important;
+        width: 100px;
+    }
+    .side-buttons__help-btns, .profile-btn__avatar {
+        display: none;
+    }
+}

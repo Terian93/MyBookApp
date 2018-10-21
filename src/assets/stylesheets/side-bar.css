@@ -1,0 +1,276 @@
+.side-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  overflow: auto;
+  background-color: #181e2c;
+  color: #78829d;
+  font-size: 13px;
+}
+
+.side-bar li:hover {
+  background-color: #181e2c;
+  cursor: pointer;
+}
+
+.side-bar__add-book-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  width: 200px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #141824;
+  background-color: #1f2637;
+}
+
+.side-bar__add-book-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  width: 160px;
+  border-radius: 4px;
+  background-color: #f2795a;
+  font-size: 14px;
+  font-family: 'ProximaNova';
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.side-bar__add-book-btn:before {
+  font-family: 'FontAwesome';
+  content: '\f067';
+  margin-right: 19px;
+  font-size: 16px;
+}
+
+.side-bar__main-nav {
+  width: 100%;
+  height: 242px;
+  background-color: #1f2637;
+  border-top: 1px solid rgba(120, 130, 157, 0.1);
+  border-bottom: 1px solid #141824;
+  margin-bottom: 4px;
+}
+
+.side-bar__main-nav li {
+  list-style: none;
+  height: 38px;
+  width: 100%;
+  padding: 13px 21px;
+}
+
+.side-bar__main-nav__now-reading--active, .side-bar__main-nav__browse--active, .side-bar__main-nav__buy-books--active, .side-bar__main-nav__favorite-books--active, .side-bar__main-nav__whishlist--active, .side-bar__main-nav__history--active {
+  background-color: #15a4fa;
+  color: #fff;
+}
+
+.side-bar__main-nav__now-reading:before, .side-bar__main-nav__now-reading--active:before {
+  font-family: 'FontAwesome';
+  content: '\f02d';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__main-nav__browse:before, .side-bar__main-nav__browse--active:before {
+  font-family: 'FontAwesome';
+  content: '\f0ac';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__main-nav__buy-books:before, .side-bar__main-nav__buy-books--active:before {
+  font-family: 'FontAwesome';
+  content: '\f07a';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__main-nav__favorite-books:before, .side-bar__main-nav__favorite-books--active:before {
+  font-family: 'FontAwesome';
+  content: '\f005';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__main-nav__whishlist:before, .side-bar__main-nav__whishlist--active:before {
+  font-family: 'FontAwesome';
+  content: '\f00b';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__main-nav__history:before, .side-bar__main-nav__history--active:before {
+  font-family: 'FontAwesome';
+  content: '\f017';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__popular-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 183px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0;
+  border-top: 1px solid rgba(120, 130, 157, 0.1);
+  border-bottom: 1px solid #141824;
+  padding-left: 0px;
+  overflow: hidden;
+  background-color: #1f2637;
+}
+
+.side-bar__popular-tags li:nth-of-type(1):before, .side-bar__popular-tags li:nth-of-type(2):before, .side-bar__popular-tags li:nth-of-type(3):before, .side-bar__popular-tags li:nth-of-type(4):before {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin: 0 15px 0 25px;
+  border-radius: 50%;
+}
+
+.side-bar__popular-tags li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 38px;
+  list-style: none;
+}
+
+.side-bar__popular-tags li:nth-of-type(1):before {
+  background-color: #e64c66;
+}
+
+.side-bar__popular-tags li:nth-of-type(2):before {
+  background-color: #ffab00;
+}
+
+.side-bar__popular-tags li:nth-of-type(3):before {
+  background-color: #00bfdd;
+}
+
+.side-bar__popular-tags li:nth-of-type(4):before {
+  background-color: #7874cf;
+}
+
+.side-bar__history-box {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 4px 0 0 0;
+  border-top: 1px solid rgba(120, 130, 157, 0.1);
+  border-bottom: 1px solid #141824;
+  background-color: #1f2637;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.side-bar__history-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 37px 21px;
+  color: #6f7d95;
+}
+
+.side-bar__history-element a {
+  color: #97b3ce;
+}
+
+.side-bar__history-element a:visited {
+  color: #97b3ce;
+}
+
+.side-bar__history-element:before {
+  font-family: 'FontAwesome';
+  content: '\f017';
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.side-bar__history-element__date {
+  font-family: 'ProximaNova-light';
+}
+
+.side-bar__history-box--empty {
+  display: none;
+}
+
+@media screen and (max-width: 824px) {
+  .side-bar {
+    width: 50%;
+    -webkit-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+  }
+  .--closed {
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .side-bar {
+    width: 100%;
+    -webkit-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+  }
+  .side-bar__add-book-btn {
+    margin: 5px auto;
+  }
+  .--closed {
+    left: -100%;
+  }
+}
+/*# sourceMappingURL=side-bar.css.map */

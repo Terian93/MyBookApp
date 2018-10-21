@@ -1,0 +1,165 @@
+.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10px;
+  width: 38px;
+  margin-left: 20px;
+}
+
+.circles .circles__red, .circles .circles__yellow, .circles .circles__green {
+  height: 10px;
+  width: 10px;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
+.circles .circles__red:last-of-type, .circles .circles__yellow:last-of-type, .circles .circles__green:last-of-type {
+  margin-right: 0;
+}
+
+.circles__red {
+  background-color: #e76847;
+}
+
+.circles__yellow {
+  background-color: #fabf00;
+}
+
+.circles__green {
+  background-color: #52bea6;
+}
+
+.app-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.app-title:before {
+  font-family: 'FontAwesome';
+  content: '\f02d';
+  display: block;
+  height: 12px;
+  width: 12px;
+  margin-right: 7px;
+}
+
+.side-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  font-size: 13px;
+}
+
+.side-buttons__help-btns {
+  width: 169px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 18px;
+}
+
+.side-buttons__help-center-btn:hover, .side-buttons__our-support-btn:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.side-buttons__divider {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #19202e;
+}
+
+.profile-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 158px;
+  background-color: #15a4fa;
+  color: #fff;
+}
+
+.profile-btn:hover {
+  cursor: pointer;
+}
+
+.profile-btn__avatar {
+  height: 32px;
+  width: 32px;
+  border: solid 2px #eef1f7;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 12px;
+}
+
+.profile-btn__fullname:after {
+  font-family: 'FontAwesome';
+  content: '\f13a';
+  height: 12px;
+  width: 12px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 824px) {
+  .circles {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .profile-btn {
+    height: 100% !important;
+    width: 100px;
+  }
+  .side-buttons__help-btns, .profile-btn__avatar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

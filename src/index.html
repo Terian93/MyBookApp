@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyBookApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="circles" onclick="toogleSideMenu()">
+            <div class="circles__red"></div>
+            <div class="circles__yellow"></div>
+            <div class="circles__green"></div>
+        </div>
+        <h3 class="app-title"> MyBookApp</h3>
+        <div class="side-buttons">
+            <div class="side-buttons__help-btns">
+                <div class="side-buttons__help-center-btn">Help Center</div>
+                <div class="side-buttons__divider"></div>
+                <div class="side-buttons__our-support-btn">Our Support</div>
+            </div>
+            <div class="profile-btn">
+                <img src="./assets/img/avatar-01.png"
+                    srcset="./assets/img/avatar-01@2x.png 2x,
+                    ./assets/img/avatar-01@3x.png 3x"
+                    class="profile-btn__avatar">
+                <div class="profile-btn__fullname">John Doe</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside class="side-bar --closed" id="side-menu">
+            <div class="side-bar__add-book-box">
+                <div class="side-bar__add-book-btn">
+                    ADD A BOOK
+                </div>
+            </div>
+            <nav class="side-bar__main-nav">
+                <li class="side-bar__main-nav__now-reading">Now Reading</li>
+                <li class="side-bar__main-nav__browse--active">Browse</li>
+                <li class="side-bar__main-nav__buy-books">Buy Books</li>
+                <li class="side-bar__main-nav__favorite-books">Favorite Books</li>
+                <li class="side-bar__main-nav__whishlist">Wishlist</li>
+                <li class="side-bar__main-nav__history">History</li>
+            </nav>
+            <ul class="side-bar__popular-tags">
+                <li>Must Read Titles</li>
+                <li>Best Of List</li>
+                <li>Classic Novels</li>
+                <li>Non Fiction</li>
+            </ul>
+            <div class="side-bar__history-box">
+                <div class="side-bar__history-element">
+                    <div class="side-bar__history-element__content">
+                        You added 
+                        <a href="#">Fight Club</a>
+                        by
+                        <a href="#">Chuck Palahniuk</a>
+                        to your
+                        <a href="#">Must Read Titles.</a>
+                        <div class="side-bar__history-element__date">
+                            24 minutes ago
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="side-bar__history-element">
+                    <div class="side-bar__history-element__content">
+                        You added
+                        <a href="#">The Trial</a>
+                        by
+                        <a href="#">Franz Kafka</a>
+                        to your
+                        <a href="#">Must Read Titles.</a>
+                        <div class="side-bar__history-element__date">
+                            48 minutes ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-space"></section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>

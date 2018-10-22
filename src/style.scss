@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: 'ProximaNova';
+    -webkit-tap-highlight-color: rgba($color: #2f364a, $alpha: .5);
 }
 
 body {
@@ -22,9 +23,9 @@ a:visited {
     text-decoration: none;
     color: inherit;
 }
-
 ::-webkit-scrollbar {
     width: 6px;
+    margin-left: -1px;
 }
 ::-webkit-scrollbar-track {
     background: none; 
@@ -52,6 +53,7 @@ main {
     height: calc(100vh - 90px);
     width: 100%;
     user-select: none;
+    overflow: hidden;
 }
 
 footer {

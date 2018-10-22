@@ -255,8 +255,8 @@
     -webkit-transition: left .5s ease-in-out;
     transition: left .5s ease-in-out;
   }
-  .--closed {
-    left: -50%;
+  .side-bar.--closed {
+    left: -60%;
   }
 }
 
@@ -269,8 +269,8 @@
   .side-bar__add-book-btn {
     margin: 5px auto;
   }
-  .--closed {
-    left: -100%;
+  .side-bar.--closed {
+    left: -101%;
   }
 }
 /*# sourceMappingURL=side-bar.css.map */

@@ -12,7 +12,7 @@
     background-color: #181e2c;
     color: #78829d;
     font-size: 13px;
-
+    
     li:hover {
         background-color: #181e2c;
         cursor: pointer;
@@ -207,8 +207,8 @@
         transition: left .5s ease-in-out;
     }
 
-    .--closed {
-        left: -50%;
+    .side-bar.--closed {
+        left: -60%;
     }
 }
 @media screen and (max-width: 420px){
@@ -222,7 +222,7 @@
         }
     }
 
-    .--closed {
-        left: -100%;
+    .side-bar.--closed {
+        left: -101%;
     }
 }

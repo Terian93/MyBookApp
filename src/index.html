@@ -22,7 +22,7 @@
                 <div class="side-buttons__divider"></div>
                 <div class="side-buttons__our-support-btn">Our Support</div>
             </div>
-            <div class="profile-btn">
+            <div class="profile-btn" onclick>
                 <img src="./assets/img/avatar-01.png"
                     srcset="./assets/img/avatar-01@2x.png 2x,
                     ./assets/img/avatar-01@3x.png 3x"
@@ -82,13 +82,186 @@
                 </div>
             </div>
         </aside>
-        <section class="main-space"></section>
+        <section class="main-space">
+            <header class="main-header">
+                <h3 class="main-header__upper-bar">
+                    Browse Available Books
+                </h3>
+                <div class="main-header__lower-bar">
+                    <div class="main-header__search-sort">
+                        <div class="main-header__search-sort-btn --active">All Books</div>
+                        <div class="main-header__search-sort-btn">Most Recent</div>
+                        <div class="main-header__search-sort-btn">Most Popular</div>
+                        <div class="main-header__search-sort-btn">Free Books</div>
+                    </div>
+                    <div class="main-header__search-container">
+                        <span class="main-header__search-icon"><i class="fa fa-search"></i></span>
+                        <input type="search" placeholder="Enter Keywords"
+                            class="main-header__search-input" 
+                            name="book-tag-input">
+                    </div>
+                        
+                </div>
+            </header>
+            <main class="books-list">
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-1.jpg"
+                        srcset="./assets/img/book-cover-1@2x.jpg 2x,
+                        ./assets/img/book-cover-1@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Jewels of Nizam</h4>
+                    <small class="books-list__book__author">by Geeta Devi</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-2.jpg"
+                        srcset="./assets/img/book-cover-2@2x.jpg 2x,
+                        ./assets/img/book-cover-2@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Cakes & Bakes</h4>
+                    <small class="books-list__book__author">by Sanjeev Kapoor</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-3.jpg"
+                        srcset="./assets/img/book-cover-3@2x.jpg 2x,
+                        ./assets/img/book-cover-3@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Jamie’s Kitchen</h4>
+                    <small class="books-list__book__author">by Jamie Oliver</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-half-o"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-4.jpg"
+                        srcset="./assets/img/book-cover-4@2x.jpg 2x,
+                        ./assets/img/book-cover-4@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Inexpensive Family Meals</h4>
+                    <small class="books-list__book__author">by Simon Holst</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-5.jpg"
+                        srcset="./assets/img/book-cover-5@2x.jpg 2x,
+                        ./assets/img/book-cover-5@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Paleo Slow Cooking</h4>
+                    <small class="books-list__book__author">by Chrissy Gower</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-half-o"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-6.jpg"
+                        srcset="./assets/img/book-cover-6@2x.jpg 2x,
+                        ./assets/img/book-cover-6@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Cook Like an Italian</h4>
+                    <small class="books-list__book__author">by Tobie Puttock</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-7.jpg"
+                        srcset="./assets/img/book-cover-7@2x.jpg 2x,
+                        ./assets/img/book-cover-7@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Suneeta Vaswani</h4>
+                    <small class="books-list__book__author">by Geeta Devi</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-8.png"
+                        srcset="./assets/img/book-cover-8@2x.png 2x,
+                        ./assets/img/book-cover-8@3x.png 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Jamie Does</h4>
+                    <small class="books-list__book__author">by Jamie Oliver</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-9.jpg"
+                        srcset="./assets/img/book-cover-9@2x.jpg 2x,
+                        ./assets/img/book-cover-9@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Jamie’s italy</h4>
+                    <small class="books-list__book__author">by Jamie Oliver</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="books-list__book">
+                    <img src="./assets/img/book-cover-10.jpg"
+                        srcset="./assets/img/book-cover-10@2x.jpg 2x,
+                        ./assets/img/book-cover-10@3x.jpg 3x"
+                        class="books-list__book__cover">
+                    <h4 class="books-list__book__title">Vegetables Cookbook</h4>
+                    <small class="books-list__book__author">by Matthew Biggs</small>
+                    <div class="books-list__book__rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-half-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+            </main>
+        </section>
     </main>
     <footer>
-        <div class="help-btn">
+        <div class="help-btn" onclick>
             <i class="fa fa-question-circle" aria-hidden="true"></i>
         </div>
-        <div class="setings-btn">
+        <div class="setings-btn" onclick>
             <i class="fa fa-cog" aria-hidden="true"></i>
         </div>
     </footer>

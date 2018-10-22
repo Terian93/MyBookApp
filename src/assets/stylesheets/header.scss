@@ -2,7 +2,9 @@
     display: flex;
     height: 10px;
     width: 38px;
-    margin-left: 20px; 
+    margin-left: 20px;
+    user-select: none;
+
 
     %circle {
         height: 10px;
@@ -94,18 +96,17 @@
     &__avatar {
         height: 32px;
         width: 32px;
+        margin-left: 12px;
         border: solid 2px #eef1f7;
         border-radius: 50%;
         object-fit: contain;
-        margin-left: 12px;
     }
-
     &__fullname:after {
         font-family: 'FontAwesome';
         content: '\f13a';
         height: 12px;
         width: 12px; 
-        margin-left: 16px
+        margin-left: 16px;
     }
 }
 

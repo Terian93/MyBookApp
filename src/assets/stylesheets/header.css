@@ -5,6 +5,10 @@
   height: 10px;
   width: 38px;
   margin-left: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .circles .circles__red, .circles .circles__yellow, .circles .circles__green {
@@ -131,11 +135,11 @@
 .profile-btn__avatar {
   height: 32px;
   width: 32px;
+  margin-left: 12px;
   border: solid 2px #eef1f7;
   border-radius: 50%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-left: 12px;
 }
 
 .profile-btn__fullname:after {

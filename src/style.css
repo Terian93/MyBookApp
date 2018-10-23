@@ -826,12 +826,13 @@ footer {
 }
 
 .books-list__book__rating {
-  height: 15px;
-  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 15px;
+  width: 80px;
   color: #ffab00;
+  unicode-bidi: bidi-override;
 }
 
 .books-list__book__rating span {
@@ -841,10 +842,6 @@ footer {
 
 .books-list__book__rating span:not(:last-of-type) {
   margin-right: 1.4px;
-}
-
-.books-list__book__rating > span:hover ~ span:before {
-  content: '\f006';
 }
 
 @media screen and (max-width: 824px) {

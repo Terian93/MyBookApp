@@ -201,10 +201,11 @@
         margin-bottom: 8px;
     }
     &__book__rating {
+        display: flex;
         height: 15px;
         width: 80px;
-        display: flex;
         color: #ffab00;
+        unicode-bidi: bidi-override;
         span{
             font-size: 16px;
             cursor: pointer;
@@ -212,9 +213,6 @@
         span:not(:last-of-type){
             margin-right: 1.4px; 
         }
-    }
-    &__book__rating > span:hover ~ span:before {
-        content: '\f006';
     }
 
 }

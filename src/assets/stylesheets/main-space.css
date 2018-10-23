@@ -48,8 +48,8 @@
 
 .main-header__search-sort {
   display: block;
-  margin-left: 20px;
   width: 340px;
+  margin-left: 20px;
 }
 
 .main-header__search-sort-btn {
@@ -114,9 +114,9 @@
 
 .main-header__search-icon {
   position: absolute;
+  right: 0px;
   padding: 5px 17px 0;
   pointer-events: none;
-  right: 0px;
   z-index: 3;
 }
 
@@ -179,18 +179,6 @@
   .main-header__search-input::placeholder {
     color: rgba(140, 151, 178, 0);
   }
-  .main-header__search-input:focus > .main-header__search-input::-webkit-input-placeholder {
-    color: #8c97b2;
-  }
-  .main-header__search-input:focus > .main-header__search-input:-ms-input-placeholder {
-    color: #8c97b2;
-  }
-  .main-header__search-input:focus > .main-header__search-input::-ms-input-placeholder {
-    color: #8c97b2;
-  }
-  .main-header__search-input:focus > .main-header__search-input::placeholder {
-    color: #8c97b2;
-  }
   .main-header_search-icon {
     display: block;
     right: 0;
@@ -208,20 +196,6 @@
   width: calc(100% - 8px);
   margin: 8px 10px 8px 0;
   overflow: auto;
-}
-
-.books-list ::-webkit-scrollbar {
-  width: 6px;
-  margin-left: -1px;
-}
-
-.books-list ::-webkit-scrollbar-track {
-  background: none;
-}
-
-.books-list ::-webkit-scrollbar-thumb {
-  background: #ccd5e4;
-  border-radius: 3px;
 }
 
 .books-list__book {
@@ -265,7 +239,6 @@
 
 .books-list__book__rating span {
   font-size: 16px;
-  cursor: pointer;
 }
 
 .books-list__book__rating span:not(:last-of-type) {

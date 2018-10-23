@@ -1,11 +1,11 @@
 .main-space {
-    //position: absolute;
     height: 100%;
     width: 100%;
     padding-left: 200px;
     z-index: 1;
     overflow: hidden;
 }
+
 //header
 .main-header {
     display: block;
@@ -39,8 +39,8 @@
 
     &__search-sort {
         display: block;
-        margin-left: 20px;
         width: 340px;
+        margin-left: 20px;
     }
     &__search-sort-btn {
         display: inline-block;
@@ -86,9 +86,9 @@
 
     &__search-icon {
         position: absolute;
+        right: 0px;
         padding: 5px 17px 0;
         pointer-events: none;
-        right: 0px;
         z-index: 3;
 
         .fa.fa-search:before {
@@ -98,34 +98,41 @@
 }
 
 @media screen and (max-width: 824px){
+
     .main-space {
         padding-left: 0;
     }
+
     .main-header {
         height: 50px;
 
         &__upper-bar {
             display: none;
         }
+
         &__lower-bar {
             height: 50px;
             padding: 0 8px;
         }
+
         &__search-sort {
             display: block;
             position: absolute;
             margin-left: 8px;
             z-index: 1;
         }
+
         &__search-sort-btn {
             padding: 0 4px 0 4px;
         }
+
         &__search-container {
             display: block;
             width: 100%;
             max-width: 100%;
             margin: 0;
         }
+
         &__search-input {
             position: absolute;
             right: 8px;
@@ -134,18 +141,17 @@
             z-index: 2;
             transition: width 0.4s ease-in-out;
         }
-        &__search-input:focus{
+
+        &__search-input:focus {
             width: calc(100% - 16px);
             padding: 11px 30px 9px 19px;
             outline: transparent;
         }
-        &__search-input::placeholder{
+
+        &__search-input::placeholder {
             color: rgba($color: #8c97b2, $alpha: 0);
         }
-        &__search-input:focus > &__search-input::placeholder{
-            color: rgba($color: #8c97b2, $alpha: 1.0)
-        }
-        
+
         &_search-icon {
             display: block;
             right: 0;
@@ -164,17 +170,6 @@
     width: calc(100% - 8px);
     margin: 8px 10px 8px 0;
     overflow: auto;
-    ::-webkit-scrollbar {
-        width: 6px;
-        margin-left: -1px;
-    }
-    ::-webkit-scrollbar-track {
-        background: none; 
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #ccd5e4;
-        border-radius: 3px;
-    }
 
     &__book {
         position: relative;
@@ -206,18 +201,18 @@
         width: 80px;
         color: #ffab00;
         unicode-bidi: bidi-override;
-        span{
+        span {
             font-size: 16px;
-            cursor: pointer;
         }
-        span:not(:last-of-type){
+        span:not(:last-of-type) {
             margin-right: 1.4px; 
         }
     }
 
 }
 @media screen and (max-width: 824px){
-    .books-list{
+
+    .books-list {
         height: calc(100% - 50px - 16px);
     }
 }

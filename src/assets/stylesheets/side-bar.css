@@ -12,7 +12,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   overflow: auto;
   background-color: #181e2c;
   color: #78829d;
@@ -77,17 +77,17 @@
 .side-bar__main-nav {
   width: 100%;
   height: 242px;
-  background-color: #1f2637;
   border-top: 1px solid rgba(120, 130, 157, 0.1);
   border-bottom: 1px solid #141824;
   margin-bottom: 4px;
+  background-color: #1f2637;
 }
 
 .side-bar__main-nav li {
-  list-style: none;
   height: 38px;
   width: 100%;
   padding: 13px 21px;
+  list-style: none;
 }
 
 .side-bar__main-nav__now-reading--active, .side-bar__main-nav__browse--active, .side-bar__main-nav__buy-books--active, .side-bar__main-nav__favorite-books--active, .side-bar__main-nav__whishlist--active, .side-bar__main-nav__history--active {
@@ -184,8 +184,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 38px;
+  width: 100%;
   list-style: none;
 }
 
